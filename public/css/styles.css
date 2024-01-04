@@ -47,11 +47,15 @@ body{
     height: 50px;
     border-radius: 50%;
     border:  2px solid white;
+
+    display: block;
+    margin: auto;
 }
 
 h1{
     font-family: 'Rubik Doodle Triangles';
     text-align: center;
+    text-transform: uppercase;
 }
 
 /* Fuentes */
@@ -73,7 +77,11 @@ p{
 }
 
 h3{
-    text-decoration: underline black dotted;
+    /* text-decoration-line: line-through;
+    text-decoration-color: rgba(255, 255, 255, 0.504);
+    text-decoration-style: wavy;
+    text-decoration-thickness: 5px; */
+    text-decoration: line-through rgba(255, 255, 255, 0.504) wavy 5px;
 }
 
 /* Footer */
