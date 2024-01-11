@@ -17,6 +17,10 @@ app.get('/about-us', ( req, res ) =>{
     res.sendFile( path.join(__dirname, 'views/about.html') )
 })
 
+app.get('/flex', ( req, res ) =>{
+    res.sendFile( path.join(__dirname, 'views/demo.html') )
+})
+
 
 
 // Public (static) Listen Server
