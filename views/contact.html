@@ -1,11 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <h1>Estas en la CONTACT</h1>
+
+    <!--
+        GET: La informacion viaja por URL
+        POST: La informacion viaja por body ( cuerpo de la request )
+    -->
+    <!-- action: Direccion hacia donde se ENVIA la informacion y se va a trabajar con ella -->
+    <form action="/contact" method="GET">
+        <div>
+            <!-- Entonces del par Clave - Valor, name sería la Clave y lo que se ingresa en el input sería el Valor -->
+            <label for="nombre">Nombre y apellido</label>
+            <input type="text" name="name" id="nombre" placeholder="David" required>
+
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+
+        </div>
+
+        <div>
+
+            <label>Elegí tu contraseña:
+                <input type="password" name="password">
+            </label>
+        </div>
+
+        <div>
+
+            <label>¿Quieres recibir nuestras ofertas en tu email?</label>
+
+            <div class="check-radio">
+                <input type="radio" value="si" name="newsletter" id="si">
+                <label for="si">Si</label>
+    
+                <input type="radio" value="no" name="newsletter" id="no">
+                <label for="no">No</label>
+                
+            </div>
+        </div>
+
+
+        <button type="submit">Registrarse</button>
+    </form>
 </body>
+
 </html>

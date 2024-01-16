@@ -101,6 +101,56 @@ h3{
     text-decoration: line-through rgba(255, 255, 255, 0.504) wavy 5px;
 }
 
+/* Formulario */
+
+form{
+    background-color: rgb(90, 90, 90);
+    max-width: 320px;
+    padding: 15px;
+    margin: auto;
+    color: white;
+}
+
+div{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.check-radio{
+    display: flex;
+    flex-direction: row;
+
+    gap: 10px;
+}
+
+input[name="password"]{
+    width: 100%;
+}
+
+input{
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+input:focus{
+    /* background-color: blue; */
+    outline: 1px solid transparent;
+    border: 1px solid blue;
+
+
+}
+
+form > button{
+   margin-top: 10px;
+   padding: 5px; 
+   border-radius: 5px;
+   background-color: rgb(77, 217, 91);
+   width: 100%;
+   border: 1px solid transparent;
+}
+
 
 /* Footer */
 

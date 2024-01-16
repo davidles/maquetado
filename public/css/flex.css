@@ -42,7 +42,6 @@ div:first-child{
     background: red;
     /* height: 100px; */
     /* order: 1; */
-
 }
 
 div:nth-child(2){

@@ -1,4 +1,5 @@
 const express = require('express');
+const { url } = require('node:inspector');
 const app = express();
 const path = require('node:path');
 
@@ -11,6 +12,26 @@ app.get('/', ( req, res ) =>{
 app.get('/contact', ( req, res ) =>{
     const pathContact = path.join(__dirname, 'views/contact.html')
     res.sendFile(pathContact);
+});
+
+app.post('/contact', ( req, res ) =>{
+
+    console.log('Se cargo la info')
+
+    res.redirect('/')
+
+})
+
+app.get('/register', ( req, res ) =>{
+    const pathContact = path.join(__dirname, 'views/contact.html')
+    res.sendFile(pathContact);
+});
+
+app.post('/register', ( req, res ) =>{
+    console.log('Se cargo la info')
+
+    res.redirect('/login')
+
 })
 
 app.get('/about-us', ( req, res ) =>{
@@ -18,6 +39,8 @@ app.get('/about-us', ( req, res ) =>{
 })
 
 app.get('/flex', ( req, res ) =>{
+    
+
     res.sendFile( path.join(__dirname, 'views/demo.html') )
 })
 
