@@ -63,8 +63,9 @@ form#search >  button{
     align-items: center;
 }
 
-button > i{
+button > .fa-magnifying-glass{
     color: rgb(145, 145, 145);
+    font-size: 10px;
 }
 
 a{
