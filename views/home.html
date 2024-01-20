@@ -1,231 +1,322 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <!-- Aca ponemos los  metadatos y enlazamos archivos necesario para la pág -->
-        <meta charset="UTF-8"> <!-- Codificacion del archivo -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mi ecommerce</title>
-        <link rel="shortcut icon" type="image/x-icon" href="/img/joker.jpg" >
-        <link rel="stylesheet" href="/css/styles.css">
 
-        <!-- Font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Triangles&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <!-- Encabezado PRINCIPAL-->
+<head>
+    <!-- Aca ponemos los  metadatos y enlazamos archivos necesario para la pág -->
+    <meta charset="UTF-8"> <!-- Codificacion del archivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi ecommerce</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/joker.jpg">
+    <link rel="stylesheet" href="/css/home.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Triangles&display=swap" rel="stylesheet">
+</head>
+
+    <!-- Font awesome -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+    <header class="header-top">
+        <!-- Encabezado PRINCIPAL-->
+        <div class="top">
             <a href="/">
-                <img id="logo" title="batman ecommerce" src="/img/batman.jpg" alt="Logo de batman">
+                <img id="logo" title="ecommerce" src="/img/logo.png" alt="Logo de batman">
             </a>
-            <h1>Mi ecommerce</h1>
-
-            <form action="/">
+            <h1 hidden>Mi ecommerce</h1>
+            
+            <form id="search" aria-label="search" action="/">
                 <input type="text">
-                <button>Buscar</button>
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
             </form>
 
+            <div class="cart">
+                <a href="#cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+
+                </a>
+            </div>
+            
+            
+            
+            <div class="menu-bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="menu-bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
             <nav>
                 <!-- Lista desordenada -->
                 <ul>
                     <li class="nav-item">
                         <a href="/about-us">About us</a>
                     </li>
-
+    
                     <li class="nav-item">
                         <a href="/contact">Contact</a>
-
+    
                     </li>
-
+    
                 </ul>
             </nav>
-
+    
             <nav>
                 <!-- Lista desordenada -->
                 <ul class="list">
-                    <li>
+                    <!-- <li>
                         <a href="#product">Product</a>
-                    </li>
-
+                    </li> -->
+    
                     <li>
                         <a href="#">Crea tu cuenta</a>
                     </li>
-
+    
                     <li>
                         <a href="#">Inicia Sesion</a>
-
+    
                     </li>
-
-                    
-                    <li>
+    
+    
+                    <!-- <li>
                         <a href="https://www.google.com/" target="_blank">Ir a google</a>
-
-                    </li>
-
+    
+                    </li> -->
+    
                 </ul>
             </nav>
 
 
-        </header>
+        </div>
 
-        <hr>
 
-        <main>
-            <!-- Contenido principal -->
+    </header>
 
-            <section>
-                <header>
-                    <h2>Ultimos visitados</h2>
-                </header>
-                <article >
+
+    <main>
+        <!-- Contenido principal -->
+
+        <section>
+            <header class="header-section">
+                <h2>Ultimos visitados</h2>
+            </header>
+            <div class="articles">
+                <article>
+                    <img class="img-product" src="/img/aspiradora.jpg" alt="aspiradora">
                     <header>
-                        <h3>Aspiradora Ultra potente </h3>
+                        <h3 class="product-title">Aspiradora Ultra potente </h3>
                     </header>
 
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nam corporis quisquam vel ea laudantium dolor sequi error. Itaque porro consequuntur labore voluptas minima aut nulla corrupti placeat libero id voluptate a nisi quidem dolore dignissimos reprehenderit, eveniet error optio nihil ea nam exercitationem nemo reiciendis sunt? Aperiam, obcaecati atque?</p>
-                        <p> <strong>La mejor aspiradora </strong>Lorem ipsum <em> dolor sit amet </em>  consectetur <span style="color: blue">adipisicing elit. </span>  Id nostrum eos tenetur impedit eaque ullam vel modi quis placeat sed?</p>
+                    <div class="description">
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nam corporis quisquam vel ea laudantium dolor sequi error. Itaque porro consequuntur labore voluptas minima aut nulla corrupti placeat libero id voluptate a nisi quidem dolore dignissimos reprehenderit, eveniet error optio nihil ea nam exercitationem nemo reiciendis sunt? Aperiam, obcaecati atque?</p> -->
+                        <p> <strong>La mejor aspiradora </strong>Lorem ipsum <em> dolor sit amet </em> consectetur
+                            <span>adipisicing elit. </span> Id nostrum eos tenetur impedit eaque ullam vel modi quis
+                            placeat sed?</p>
 
-                        <p>$8000</p>
-                    </div>
+                        </div>
 
+                        <p class="shipping">Envío gratis</p>
+                        
+                        <p class="price">$8000</p>
 
 
                 </article>
-                <article  >
+                <article>
+                    <img class="img-product" src="/img/aspiradora.jpg" alt="aspiradora">
                     <header>
-                        <h3>Aspiradora Ultra potente </h3>
+                        <h3 class="product-title">Aspiradora Ultra potente </h3>
                     </header>
 
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nam corporis quisquam vel ea laudantium dolor sequi error. Itaque porro consequuntur labore voluptas minima aut nulla corrupti placeat libero id voluptate a nisi quidem dolore dignissimos reprehenderit, eveniet error optio nihil ea nam exercitationem nemo reiciendis sunt? Aperiam, obcaecati atque?</p>
-                        <p> <strong>La mejor aspiradora </strong>Lorem ipsum <em> dolor sit amet </em>  consectetur <span style="color: blue">adipisicing elit. </span>  Id nostrum eos tenetur impedit eaque ullam vel modi quis placeat sed?</p>
+                    <div class="description">
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nam corporis quisquam vel ea laudantium dolor sequi error. Itaque porro consequuntur labore voluptas minima aut nulla corrupti placeat libero id voluptate a nisi quidem dolore dignissimos reprehenderit, eveniet error optio nihil ea nam exercitationem nemo reiciendis sunt? Aperiam, obcaecati atque?</p> -->
+                        <p> <strong>La mejor aspiradora </strong>Lorem ipsum <em> dolor sit amet </em> consectetur
+                            <span>adipisicing elit. </span> Id nostrum eos tenetur impedit eaque ullam vel modi quis
+                            placeat sed?</p>
 
-                        <p>$8000</p>
-                    </div>
+                        </div>
 
+                        <p class="shipping">Envío gratis</p>
+                        
+                        <p class="price">$8000</p>
 
 
                 </article>
 
-                <article id="product" >
+                <article>
+                    <img class="img-product" src="/img/aspiradora.jpg" alt="aspiradora">
                     <header>
-                        <h3>Aspiradora Ultra potente </h3>
+                        <h3 class="product-title">Aspiradora Ultra potente </h3>
                     </header>
 
-                    <div>
-                        <p> <strong>La mejor aspiradora </strong>Lorem ipsum <em> dolor sit amet </em>  consectetur <span style="color: blue">adipisicing elit. </span>  Id nostrum eos tenetur impedit eaque ullam vel modi quis placeat sed?</p>
+                    <div class="description">
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nam corporis quisquam vel ea laudantium dolor sequi error. Itaque porro consequuntur labore voluptas minima aut nulla corrupti placeat libero id voluptate a nisi quidem dolore dignissimos reprehenderit, eveniet error optio nihil ea nam exercitationem nemo reiciendis sunt? Aperiam, obcaecati atque?</p> -->
+                        <p> <strong>La mejor aspiradora </strong>Lorem ipsum <em> dolor sit amet </em> consectetur
+                            <span>adipisicing elit. </span> Id nostrum eos tenetur impedit eaque ullam vel modi quis
+                            placeat sed?</p>
 
-                        <p>$8000</p>
-                    </div>
+                        </div>
 
+                        <p class="shipping">Envío gratis</p>
+                        
+                        <p class="price">$8000</p>
 
 
                 </article>
-            </section>
 
-            <section>
-                <header>
-                    <h2>Los más vendidos</h2>
-                </header>
-                <article id="product" >
+            </div>
+        </section>
+
+        <section>
+            <header class="header-section">
+                <h2>Ultimos visitados</h2>
+            </header>
+            <div class="articles">
+                <article>
+                    <img class="img-product" src="/img/aspiradora.jpg" alt="aspiradora">
                     <header>
-                        <h3>Aspiradora Ultra potente </h3>
+                        <h3 class="product-title">Aspiradora Ultra potente </h3>
                     </header>
 
-                    <div>
-                        <p> <strong>La mejor aspiradora </strong>Lorem ipsum <em> dolor sit amet </em>  consectetur <span style="color: blue">adipisicing elit. </span>  Id nostrum eos tenetur impedit eaque ullam vel modi quis placeat sed?</p>
+                    <div class="description">
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nam corporis quisquam vel ea laudantium dolor sequi error. Itaque porro consequuntur labore voluptas minima aut nulla corrupti placeat libero id voluptate a nisi quidem dolore dignissimos reprehenderit, eveniet error optio nihil ea nam exercitationem nemo reiciendis sunt? Aperiam, obcaecati atque?</p> -->
+                        <p> <strong>La mejor aspiradora </strong>Lorem ipsum <em> dolor sit amet </em> consectetur
+                            <span>adipisicing elit. </span> Id nostrum eos tenetur impedit eaque ullam vel modi quis
+                            placeat sed?</p>
 
-                        <p>$8000</p>
-                    </div>
+                        </div>
 
+                        <p class="shipping">Envío gratis</p>
+                        
+                        <p class="price">$8000</p>
 
 
                 </article>
-                <article id="product" >
+
+                <article>
+                    <img class="img-product" src="/img/aspiradora.jpg" alt="aspiradora">
                     <header>
-                        <h3>Aspiradora Ultra potente </h3>
+                        <h3 class="product-title">Aspiradora Ultra potente </h3>
                     </header>
 
-                    <div>
-                        <p> <strong>La mejor aspiradora </strong>Lorem ipsum <em> dolor sit amet </em>  consectetur <span style="color: blue">adipisicing elit. </span>  Id nostrum eos tenetur impedit eaque ullam vel modi quis placeat sed?</p>
+                    <div class="description">
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nam corporis quisquam vel ea laudantium dolor sequi error. Itaque porro consequuntur labore voluptas minima aut nulla corrupti placeat libero id voluptate a nisi quidem dolore dignissimos reprehenderit, eveniet error optio nihil ea nam exercitationem nemo reiciendis sunt? Aperiam, obcaecati atque?</p> -->
+                        <p> <strong>La mejor aspiradora </strong>Lorem ipsum <em> dolor sit amet </em> consectetur
+                            <span>adipisicing elit. </span> Id nostrum eos tenetur impedit eaque ullam vel modi quis
+                            placeat sed?</p>
 
-                        <p>$8000</p>
-                    </div>
+                        </div>
 
+                        <p class="shipping">Envío gratis</p>
+                        
+                        <p class="price">$8000</p>
 
 
                 </article>
-                <article id="product" >
+
+                <article>
+                    <img class="img-product" src="/img/aspiradora.jpg" alt="aspiradora">
                     <header>
-                        <h3>Aspiradora Ultra potente </h3>
+                        <h3 class="product-title">Aspiradora Ultra potente </h3>
                     </header>
 
-                    <div>
-                        <p> <strong>La mejor aspiradora </strong>Lorem ipsum <em> dolor sit amet </em>  consectetur <span style="color: blue">adipisicing elit. </span>  Id nostrum eos tenetur impedit eaque ullam vel modi quis placeat sed?</p>
+                    <div class="description">
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nam corporis quisquam vel ea laudantium dolor sequi error. Itaque porro consequuntur labore voluptas minima aut nulla corrupti placeat libero id voluptate a nisi quidem dolore dignissimos reprehenderit, eveniet error optio nihil ea nam exercitationem nemo reiciendis sunt? Aperiam, obcaecati atque?</p> -->
+                        <p> <strong>La mejor aspiradora </strong>Lorem ipsum <em> dolor sit amet </em> consectetur
+                            <span>adipisicing elit. </span> Id nostrum eos tenetur impedit eaque ullam vel modi quis
+                            placeat sed?</p>
 
-                        <p>$8000</p>
-                    </div>
+                        </div>
 
+                        <p class="shipping">Envío gratis</p>
+                        
+                        <p class="price">$8000</p>
 
 
                 </article>
-                <article id="product" >
+                <article>
+                    <img class="img-product" src="/img/aspiradora.jpg" alt="aspiradora">
                     <header>
-                        <h3>Aspiradora Ultra potente </h3>
+                        <h3 class="product-title">Aspiradora Ultra potente </h3>
                     </header>
 
-                    <div>
-                        <p> <strong>La mejor aspiradora </strong>Lorem ipsum <em> dolor sit amet </em>  consectetur <span style="color: blue">adipisicing elit. </span>  Id nostrum eos tenetur impedit eaque ullam vel modi quis placeat sed?</p>
+                    <div class="description">
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nam corporis quisquam vel ea laudantium dolor sequi error. Itaque porro consequuntur labore voluptas minima aut nulla corrupti placeat libero id voluptate a nisi quidem dolore dignissimos reprehenderit, eveniet error optio nihil ea nam exercitationem nemo reiciendis sunt? Aperiam, obcaecati atque?</p> -->
+                        <p> <strong>La mejor aspiradora </strong>Lorem ipsum <em> dolor sit amet </em> consectetur
+                            <span>adipisicing elit. </span> Id nostrum eos tenetur impedit eaque ullam vel modi quis
+                            placeat sed?</p>
 
-                        <p>$8000</p>
-                    </div>
+                        </div>
 
+                        <p class="shipping">Envío gratis</p>
+                        
+                        <p class="price">$8000</p>
 
 
                 </article>
-                <article id="product" >
+                <article>
+                    <img class="img-product" src="/img/aspiradora.jpg" alt="aspiradora">
                     <header>
-                        <h3>Aspiradora Ultra potente </h3>
+                        <h3 class="product-title">Aspiradora Ultra potente </h3>
                     </header>
 
-                    <div>
-                        <p> <strong>La mejor aspiradora </strong>Lorem ipsum <em> dolor sit amet </em>  consectetur <span style="color: blue">adipisicing elit. </span>  Id nostrum eos tenetur impedit eaque ullam vel modi quis placeat sed?</p>
+                    <div class="description">
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nam corporis quisquam vel ea laudantium dolor sequi error. Itaque porro consequuntur labore voluptas minima aut nulla corrupti placeat libero id voluptate a nisi quidem dolore dignissimos reprehenderit, eveniet error optio nihil ea nam exercitationem nemo reiciendis sunt? Aperiam, obcaecati atque?</p> -->
+                        <p> <strong>La mejor aspiradora </strong>Lorem ipsum <em> dolor sit amet </em> consectetur
+                            <span>adipisicing elit. </span> Id nostrum eos tenetur impedit eaque ullam vel modi quis
+                            placeat sed?</p>
 
-                        <p>$8000</p>
-                    </div>
+                        </div>
 
+                        <p class="shipping">Envío gratis</p>
+                        
+                        <p class="price">$8000</p>
 
 
                 </article>
-                <article id="product" >
+
+                <article>
+                    <img class="img-product" src="/img/aspiradora.jpg" alt="aspiradora">
                     <header>
-                        <h3>Aspiradora Ultra potente </h3>
+                        <h3 class="product-title">Aspiradora Ultra potente </h3>
                     </header>
 
-                    <div>
-                        <p> <strong>La mejor aspiradora </strong>Lorem ipsum <em> dolor sit amet </em>  consectetur <span style="color: blue">adipisicing elit. </span>  Id nostrum eos tenetur impedit eaque ullam vel modi quis placeat sed?</p>
+                    <div class="description">
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nam corporis quisquam vel ea laudantium dolor sequi error. Itaque porro consequuntur labore voluptas minima aut nulla corrupti placeat libero id voluptate a nisi quidem dolore dignissimos reprehenderit, eveniet error optio nihil ea nam exercitationem nemo reiciendis sunt? Aperiam, obcaecati atque?</p> -->
+                        <p> <strong>La mejor aspiradora </strong>Lorem ipsum <em> dolor sit amet </em> consectetur
+                            <span>adipisicing elit. </span> Id nostrum eos tenetur impedit eaque ullam vel modi quis
+                            placeat sed?</p>
 
-                        <p>$8000</p>
-                    </div>
+                        </div>
 
+                        <p class="shipping">Envío gratis</p>
+                        
+                        <p class="price">$8000</p>
 
 
                 </article>
-            </section>
 
-        </main>
+            </div>
+        </section>
 
-        <footer>
-            <!-- Información referida a la página pero que no tiene que ver con el contenido principal -->
-            Copyright &copy;    
-        </footer>
-        
-    </body>
+    </main>
+
+    <footer>
+        <!-- Información referida a la página pero que no tiene que ver con el contenido principal -->
+        Copyright &copy;
+    </footer>
+
+</body>
+
 </html>
 
 
 
 
-    <!-- <h1>Estas en la HOME</h1> -->
+<!-- <h1>Estas en la HOME</h1> -->

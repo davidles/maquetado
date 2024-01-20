@@ -33,8 +33,8 @@ body{
     background-position: bottom right;
     background-attachment: fixed; */
 
-    background: rgba(5, 152, 249, 0.479) url('../img/wallpaper.avif') no-repeat center right fixed;
-    background-size: 20vw;
+    background: rgba(5, 152, 249, 0.479) ;
+    
 
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
@@ -47,7 +47,7 @@ body{
 
 header{
     background-color: white;
-    height: 70px;
+    min-height: 70px;
     display: flex;
     align-items: center;
 }
@@ -66,7 +66,10 @@ header{
 h1{
     font-family: 'Rubik Doodle Triangles';
     text-align: center;
-    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: black;
+    text-shadow: -3px -2px 2px rgba(255,255,255,0.6);
+    margin-bottom: 15px;
 }
 nav{
     display: flex;
@@ -111,11 +114,34 @@ a:hover{
 main{
     padding: 50px;
 }
-p{
+
+section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+div.articles{
+    width: 100%;
+    background-color: red;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section > header, article  > header{
+    background-color: transparent;
+}
+/* p{
     font-size: 20px;
     font-style: italic;
     font-weight: 400;
     line-height: 36px;
+} */
+
+article{
+    max-width: 230px;
 }
 
 h3{
@@ -128,12 +154,17 @@ h3{
 
 /* Formulario */
 
-form{
+form#contact{
     background-color: rgb(25, 25, 25);
     max-width: 320px;
     padding: 15px;
     margin: auto;
     color: white;
+    box-shadow: -3px 0px 21px 0px rgba(255,255,255,0.75);
+    -webkit-box-shadow: -3px 0px 21px 0px rgba(255,255,255,0.75);
+    -moz-box-shadow: -3px 0px 21px 0px rgba(255,255,255,0.75);
+
+ 
 }
 
 div{
@@ -168,7 +199,7 @@ input:focus{
 
 }
 
-form > button{
+form#contact > button{
    margin-top: 10px;
    padding: 5px; 
    border-radius: 5px;
@@ -178,30 +209,16 @@ form > button{
    transition: all 1s;
 }
 
-form > button:hover{
+form#contact > button:hover{
     border-radius: 0px;
     background-color: rgb(46, 129, 54);
     border: 1px solid white;
     color: white;
  }
-
-
+ 
 
  div#arrow{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: solid 5px   rgb(228, 228, 228);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: absolute;
-    top: 250px;
-    left: 20%;
-
-    animation: arrow 3s infinite;
+    display: none;
  }
 
  div#arrow > i {
@@ -225,8 +242,28 @@ form > button:hover{
 /* Medias queries */
 @media ( min-width: 768px ){
     body{
+        background: rgba(5, 152, 249, 0.479) url('../img/wallpaper.avif') no-repeat center right fixed;
+
         background-size: contain;
         color: white;
+    }
+
+    
+    div#arrow{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: solid 5px   rgb(228, 228, 228);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: 250px;
+        left: 10%;
+
+        animation: arrow 3s infinite;
     }
 }
 
@@ -234,6 +271,10 @@ form > button:hover{
     body{
         background-size: 100vw;
         color: white;
+    }
+
+    div#arrow{
+        left: 20%;
     }
 }
 
