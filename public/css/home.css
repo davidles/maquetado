@@ -249,6 +249,12 @@ footer{
         scale: 1.02;
     }
 
+    /* Descripcion con hover sobre el article */
+
+    article:hover > .description{
+        display: block;
+    }
+
   }
   
 
